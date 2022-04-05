@@ -1,8 +1,11 @@
 // Manish Kumar, IIIT Allahabad
+// Modification of 2sum
 
 https://cses.fi/problemset/task/1642
 
 // Using faster hash map then unordered_map
+// Refer: https://usaco.guide/problems/cses-1642-sum-of-four-values/solution
+
 
 #include<bits/stdc++.h>
 using namespace std;
