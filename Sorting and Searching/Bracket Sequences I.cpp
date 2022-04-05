@@ -1,5 +1,8 @@
 // Manish Kumar, IIIT Allahabad
 
+// nth Catalen no. in O(n) using formula
+// Catalen[n] = 2nCn / (n+1)
+
 https://cses.fi/problemset/task/2064
 
 #include<bits/stdc++.h>
