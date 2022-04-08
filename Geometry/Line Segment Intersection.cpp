@@ -6,6 +6,7 @@
 * @problem: https://cses.fi/problemset/task/2190/
 * @refer: https://cses.fi/problemset/task/2190/
 *
+* @hint: using orientation 
 */
 
 #include<bits/stdc++.h>
