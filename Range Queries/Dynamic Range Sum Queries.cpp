@@ -5,6 +5,7 @@
 *
 * @problem: https://cses.fi/problemset/task/1648
 * @logic: Segment Trees
+* @refer: https://www.youtube.com/watch?v=2bSS8rtFym4&ab_channel=TECHDOSE
 *
 */
 
