@@ -4,6 +4,7 @@
 * @institute: IIIT Allahabad, INDIA
 *
 * @problem: https://cses.fi/problemset/task/1660
+* @disc: also work for -ve values 
 *
 */
 
