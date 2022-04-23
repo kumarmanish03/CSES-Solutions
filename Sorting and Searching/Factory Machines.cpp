@@ -4,7 +4,7 @@
 * @institute: IIIT Allahabad, INDIA
 *
 * @problem: https://cses.fi/problemset/task/1620/
-*
+* @desc: simple binary search
 */
 
 #include<bits/stdc++.h>
