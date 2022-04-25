@@ -33,7 +33,7 @@ int solve(){
     }
     
     sort(mov.begin(), mov.end(), [](auto a, auto b){
-        if(a.sc == b.fs)
+        if(a.sc == b.sc)
             return a.fs < b.fs;
         return a.sc < b.sc;
     });
