@@ -4,7 +4,7 @@
 * @institute: IIIT Allahabad, INDIA
 *
 * @problem: https://cses.fi/problemset/task/1143/
-* @logic: Complex Segment Tree
+* @logic: Complex Segment Tree + Binary Search
 * @TC: O(m * logn * logn)
 *
 */
