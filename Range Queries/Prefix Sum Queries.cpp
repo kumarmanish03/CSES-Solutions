@@ -5,6 +5,7 @@
 *
 * @problem: https://cses.fi/problemset/task/2166
 * @refer: https://usaco.guide/problems/cses-2166-prefix-sum-queries/solution
+* @topic: segment trees
 * @desc: see above article to understand
 *
 */
