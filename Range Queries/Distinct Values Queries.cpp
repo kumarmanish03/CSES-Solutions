@@ -4,10 +4,10 @@
 * @institute: IIIT Allahabad, INDIA
 *
 * @problem: https://cses.fi/problemset/task/1734/
-* @topics: MO's algorithm, corrdinate compression
+* @topics: MO's algorithm, coordinate compression
 * @refer: [logic] https://codeforces.com/blog/entry/77128
 *   [Mo's algo] https://www.youtube.com/watch?v=0Cu9Kg7RJYg&t=851s&ab_channel=ApnaCollege
-*   [corrdinate compression] https://www.youtube.com/watch?v=s9oXy-fZUzg&ab_channel=Luv
+*   [coordinate compression] https://www.youtube.com/watch?v=s9oXy-fZUzg&ab_channel=Luv
 *
 * @TC: O((n+q)root(n))
 *
@@ -38,7 +38,7 @@ int solve(){
     for(int &x:v)
         cin >> x;
 
-    /* corrdinate compression */
+    /* coordinate compression */
     v1 = v;
     sort(v1.begin(), v1.end());
     map<int, int> compress;
