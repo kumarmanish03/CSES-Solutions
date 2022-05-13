@@ -32,6 +32,7 @@ int solve(){
     for(int &x:v)
         cin >> x;
 
+    // dp[i] = {minRides, lastWt} stores rides till i person and 'lastwt' stores wt of last rides 
     vector<pair<int, int>> dp(1 << n, {25, 1e9+5});
     // first ride is 1 with last ride weight is 0
     dp[0] = {1, 0};
