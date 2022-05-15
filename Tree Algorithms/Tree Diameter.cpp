@@ -4,7 +4,6 @@
 * @institute: IIIT Allahabad, INDIA
 *
 * @problem: https://cses.fi/problemset/task/1131/
-* @TC: O(V + E)
 *
 */
 
