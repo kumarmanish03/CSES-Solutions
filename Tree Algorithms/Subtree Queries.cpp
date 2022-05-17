@@ -78,9 +78,9 @@ int solve(){
     dfs(1, -1);
 
     // we can see flat tree here
-    // for(int i = 1; i <= n; i++){
-    //     print(flat_tree[i], start[i], endd[i]);
-    // }
+    // for(int i = 1; i<= n; i++)
+    //     print(flat_tree[i], start1[flat_tree[i]], end1[flat_tree[i]]);
+
 
     // construct fenwick tree
     for(int i = 1; i <= n; i++){
