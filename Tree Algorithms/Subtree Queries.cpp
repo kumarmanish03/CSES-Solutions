@@ -4,9 +4,10 @@
 * @institute: IIIT Allahabad, INDIA
 *
 * @problem: https://cses.fi/problemset/task/1137/
-* @TC: O(nlogn) [code is correct but passing 50% test cases, may be due to overflow issues]
+* @TC: O(nlogn)
 * @topic: Euler tour / flatting tree & Fenwick tree
-* @refer: https://www.youtube.com/watch?v=P8NHOmX5XGM
+* @refer: https://codeforces.com/blog/entry/79048
+* @desc: B/w (start[u], endd[u]) constains all nodes of subtree u
 *
 */
 
@@ -27,25 +28,22 @@ void print(T &&t, Args &&... args)
 const int N = 2e5+5;
 vector<int> tree[N];
 vector<int> value(N, 0);
-vector<int> start1(N, 0);
-vector<int> end1(N, 0);
-vector<int> flat_tree(4*N, 0);
-int cnt;
+vector<int> start(N, 0);
+vector<int> endd(N, 0);
+vector<int> flat_tree(N, 0);
+vector<int> bit(N, 0);
+int timer;
 
-vector<int> bit(4*N, 0);
 
 // flatting the tree 
 void dfs(int u, int p){
-    start1[u] = cnt;
-    flat_tree[cnt] = value[u];
-    cnt++;
+    start[u] = ++timer;
+    flat_tree[timer] = u;
     for(int v: tree[u]){
         if(v == p) continue;
         dfs(v, u);
     }
-    end1[u] = cnt;
-    flat_tree[cnt] = value[u];
-    cnt++;
+    endd[u] = timer;
 }
 
 // Fenwick Tree
@@ -63,10 +61,6 @@ void update(int i, int val){
     }
 }
 
-int getSum(int l, int r){
-    return sum(r) - sum(l-1);
-}
-
 int solve(){
     int n, q;
     cin >> n >> q;
@@ -80,12 +74,17 @@ int solve(){
         tree[b].push_back(a);
     }
 
-    cnt = 1;
+    timer = 0;
     dfs(1, -1);
 
+    // we can see flat tree here
+    // for(int i = 1; i <= n; i++){
+    //     print(flat_tree[i], start[i], endd[i]);
+    // }
+
     // construct fenwick tree
-    for(int i = 1; i < cnt; i++){
-        update(i, flat_tree[i]);
+    for(int i = 1; i <= n; i++){
+        update(i, value[flat_tree[i]]);
     }
 
     int t;
@@ -94,16 +93,13 @@ int solve(){
         if(t == 1){
             int u, val;
             cin >> u >> val;
-            update(start1[u], val - value[u]);
-            update(end1[u], val - value[u]);
+            update(start[u], val - value[u]);
             value[u] = val;
-            flat_tree[start1[u]] = val;
-            flat_tree[end1[u]] = val;
         }
         else{
             int u;
             cin >> u;
-            print(getSum(start1[u], end1[u]) / 2);
+            print(sum(endd[u]) - sum(start[u] - 1));
         }
     }
     
