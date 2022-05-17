@@ -4,7 +4,7 @@
 * @institute: IIIT Allahabad, INDIA
 *
 * @problem: https://cses.fi/problemset/task/1192/
-* @desc: Easy DFS
+* @desc: Easy Traversal
 * @TC: O(nm)
 *
 */
