@@ -10,7 +10,7 @@
 *  # dfs2(): flattening a tree
 *  # Observation: if value of node u changes then it will affect ans of its subtree nodes only
 *  # Then in flattened tree we add +val at start[u] and -val(to neutralize it) at endd[u]+1
-*  # Hence final answer original + pathSum[u] + (sum of changes made till subtree node)
+*  # Hence final answer is original pathSum[u] + (sum of changes made till subtree node)
 * 
 */
 
