@@ -9,7 +9,6 @@
 * @desc: Dijkstra Algorithm:
     # The graph should be weighted.
     # The weights should be non-negative.
-    # Also, Undirected graph with -ve edge weight is similar to graph with -ve edge weight cycle
 *
 */
 
