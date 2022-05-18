@@ -5,7 +5,7 @@
 *
 * @problem: https://cses.fi/problemset/task/1671/
 * @refer: https://www.youtube.com/watch?v=F3PNsWE6_hM&t=874s&ab_channel=Luv
-* @TC: O(V + ElogV) [for adj. list]
+* @TC: O((V + E)logV) -> O(V + ElogV) [for adj. list]
 * @desc: Dijkstra Algorithm:
     # The graph should be weighted.
     # The weights should be non-negative.
