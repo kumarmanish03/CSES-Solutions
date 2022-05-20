@@ -6,6 +6,8 @@
 * @problem: https://cses.fi/problemset/task/1678/
 * @refer: https://www.youtube.com/watch?v=GLxfoaZlRqs&t=238s
 * @desc: Detect cycle in directed graph
+    # Instead of parent, here we have to maintain recursion stack
+    # If node is vis & in recursion stack then cycle present
 * @TC: O(V + E)
 *
 */
