@@ -5,7 +5,9 @@
 *
 * @problem: https://cses.fi/problemset/task/1668/
 * @TC: O(n + m)
-* @desc: Checking for loop and saving its node, also maintaining parents to track its paths 
+* @desc: 
+    # Detect cycle in Undirected graph
+    # Checking for loop and saving its node, also maintaining parents to track its paths 
 *
 */
 
